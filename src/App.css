@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: linear-gradient(rgb(165, 165, 180),rgb(54, 54, 135));
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  .navbar .input-field{
+     margin-left: 50px;
+  }
+  .navbar .input-field button{
+    margin: 20px;
+    padding: 3px;
+  }
+  .navbar .input-field input{
+    padding: 2px;
+  }
+.main{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 80vh;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar .navlink{
+  list-style:none;
+  margin: 20px;
+  display: inline-flex;
 }
+.navbar .navlink li{
+  margin-left: 20px;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.content .projectCard{
+  margin: 50px;
 }
